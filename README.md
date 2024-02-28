@@ -6,7 +6,7 @@ WinFind will enumerate registry keys, binaries residing in common places, and st
 - Binaries that reside inside of
   - C:\Windows\
   - C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp
-  - C:\Users\%USERNAME%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+  - C:\Users\\%USERNAME%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
 - Startup Services
   ```powershell
   Get-Service | Where-Object { $_.StartType -eq 'Automatic' } | ForEach-Object {
